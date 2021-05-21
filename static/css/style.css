@@ -1,0 +1,341 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+/**CLASSES GERAIS**/
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+/****/ 
+
+/**Header**/
+header{
+	padding-top: 30px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image:url('../img/background-header.png'); 
+}
+
+header .logo{
+	width: 290px;
+	height: 100px;
+	background-image: url('../img/logo-bestseller.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 100px;
+}
+
+
+
+.chamada1{
+	max-width: 350px;
+	float: right;
+	margin:80px 10%;
+	width: 50%;
+}
+
+.chamada1 h1{
+	font-family: 'MuseoModerno', cursive;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 65px;
+	color: #00372e; 
+}
+
+.chamada1 p{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18px;
+	color: #f8fdfc;
+	margin-top:10px;
+	font-weight: 600;
+	padding-left: 10px;
+}
+
+.btn-texto{
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 600;
+	background-image: linear-gradient(#b49354,#a07b34); 
+	margin-left: 25%;
+	margin-top:30px;
+	width: 250px;
+	height: 44px;
+	font-size: 15px;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 10px;
+}
+
+header img{
+	position: relative;
+	top: 70px;
+	left: 5%;
+	width: 38%;
+	padding: 0 2%;
+}
+/****/
+/*Sinopse*/
+section.sessao-sinopse {
+	background-color:#ffffff;
+	margin: 130px 5%;
+}
+
+
+.titulo-sinopse{
+	color: #00b8a4; 
+	font-size: 50px;
+	font-weight: 800;
+	font-family: 'Maven Pro', sans-serif;
+	margin-left: 10%;
+}
+
+.texto-sinopse {
+	margin: 30px auto;
+	width: 80%;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 25px;
+}
+
+.aspas {
+	opacity: 0;
+	background-image: url(../img/aspas.png);
+	width: 10%;
+	height: 58px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/**/ 
+
+/****Section discover more***/
+section.mosaico{
+	padding-top: 70px;
+	background-color: #f0f0f0;
+}
+section.mosaico .container{
+	max-width: 1000;
+}
+
+.mosaico .flex h1{
+	color: #00b8a4;
+	font-size: 38px;
+	font-weight: 800;
+	font-family: 'Maven Pro', sans-serif;
+	margin-top: 30px;
+}
+
+.mosaico-single{
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background-color: #f0f0f0;
+	float: left;
+	width: calc(100% / 4);
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+/**/ 
+/*Section Partners*/
+section.partners {
+	background-color: #ffffff;
+	padding-top: 80px;
+}
+section.partners .flex h2,p { 
+	font-size: 25px;
+}
+section.partners .flex h2{
+	color: #09baa6; 
+	padding-bottom: 5px;
+}
+
+.lojas {
+	padding-top: 50px;
+	width: calc(100% / 6); 
+	float: left;
+}
+
+.lojas-item{
+	width: 100%;
+	padding-top:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+/**/ 
+/*FOOTER*/
+footer {
+	background-image: url(../img/background-header-mob.png);
+	padding-bottom: 50px;
+}
+
+footer .socials {
+	flex-direction: row;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+
+/**/
+
+/**MEDIA SCREENS**/
+@media screen and (max-width: 920px){
+	header img{
+		position: relative;
+		top: 60px;
+		left: 0;
+		width: 30%;
+		padding: 0 2%;
+	}
+
+	.chamada1 h1{
+		font-weight: 300;
+		font-size: 48px;
+		padding:0 0px;
+	}
+
+	.chamada1 p{
+		font-size: 15px;
+		color: white;
+		margin-top:10px;
+	}
+
+	.btn-texto{
+		width: 200px;
+		height: 34px;
+		font-size: 13px;
+		line-height: 35px;
+	}
+	
+	header img{
+		top: 40px;
+	}
+
+	.texto-sinopse {
+		margin: 30px auto;
+		width: 80%;
+		font-size: 22px;
+	}
+
+	.aspas {
+		width: 14%;
+		height: 40px;
+	}
+
+	.mosaico .flex h1{
+		font-size: 30px;
+	}
+
+	.lojas {
+		width: calc(100% / 4); 
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	header .logo{
+		margin: 0 2%;
+		width: 100%;
+	}
+
+	header .container .right {
+		float: none;
+		width: 100%;
+        text-align: center;
+        float: none;
+	}
+
+	header img{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		position: static; 
+		padding: 0 2%;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+
+	.chamada1{
+		max-width: none;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 10px auto;
+		padding-bottom: 50px;
+	}
+
+	.chamada1 h1{
+		font-size: 40px;
+	}
+
+	.chamada1 p{
+		padding: 0 10%;
+		font-size: 18px;
+		margin-top:10px;
+	}
+
+	.btn-texto{
+		width: 200px;
+		height: 34px;
+		font-size: 13px;
+		line-height: 35px;
+		margin: 10px auto;
+	}
+
+
+	header img{
+		position: static;
+		width: 60%;
+		margin: 40px auto;
+	}
+	
+	.mosaico .flex h1{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.mosaico .flex h1{
+		font-size: 20px;
+	}
+
+	.lojas {
+		width: calc(100% / 3); 
+		padding-top: 50px;
+	}
+}
